@@ -6,9 +6,9 @@ Prerequisites
 Make sure you have the following:
 
 a) An AWS account which can be signed up on https://aws.amazon.com/
-b) AWS Command Line Interface (CLI) installed on your machine as to create the RDS instance 
 
-Steps to be followed
+
+Steps to be followed:
 
 Step-1: Login to the AWS Console by signing into the AWS account and open the Amazon RDS console at https://console.aws.amazon.com/rds
 Step-2: Create the RDS Database by creating the RDS instance and choosing the "Standard Create" option
