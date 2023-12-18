@@ -164,6 +164,22 @@ Ans: select name from employee order by name;
 
 Ans: Select DISTINCT City from Station where city not like "[aeiou]%" or city not like "%[aeiou]";
 
+6) Query the Name of any student in STUDENTS who scored higher than  Marks. Order your output by the last three characters of each name. If two or more students both have names ending in the same last three characters (i.e.: Bobby, Robby, etc.), secondary sort them by ascending ID.
+
+Ans: Select Name from Students where Marks > 75 ORDER BY RIGHT(NAME, 3), ID;
+
+7)Query the list of CITY names from STATION that do not start with vowels. Your result cannot contain duplicates.
+
+Ans: Select DISTINCT City from Station Where City NOT LIKE '[aeiou]%' ;
+
+8)Query the list of CITY names from STATION that do not end with vowels. Your result cannot contain duplicates.
+
+Ans: Select Distinct City from Station where city not like "%[aeiou]" ;
+
+9) Query the list of CITY names from STATION that do not start with vowels and do not end with vowels. Your result cannot contain duplicates.
+
+Ans: Select DISTINCT City from Station Where City NOT LIKE "[aeiou]%" and City NOT LIKE "%[aeiou]" ;
+
 
 
 
