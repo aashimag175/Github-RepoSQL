@@ -96,5 +96,79 @@ FROM STATION;
 
 
 
+W3Schools Questions Continued......
+
+1) Select all records from the Customers table, sort the result alphabetically by the column City.
+
+Ans: Select * from Customers ORDER BY City;
+
+2) Select all records from the Customers table, sort the result reversed alphabetically by the column City.
+
+Ans: Select * from Customers ORDER BY City DESC;
+
+3)Select all records from the Customers table, sort the result alphabetically, first by the column Country, then, by the column City.
+
+Ans: Select * from Customers ORDER BY Country,City;
+
+4) Select all customers from Spain that starts with the letter 'G':
+
+Ans: Select * from Customers where Country = "Spain" and Customername LIKE "G%" ;
+
+5) selects all fields from Customers where Country is "Germany" AND City is "Berlin" AND PostalCode is higher than 12000
+
+Ans: Select * from Customers
+Where Country = "Germany"
+AND City = "Berlin"
+AND PostalCode >= 12000;
+
+6) Select all Spanish customers that starts with either "G" or "R":
+
+Ans: Select * from Customers where Country = "Spain"
+AND Customername LIKE "G%" OR Customername LIKE "R%";
+
+7) Select all customers that either are from Spain and starts with either "G", or starts with the letter "R"
+
+Ans: Select * from Customers where Country = "Spain" and Customername LIKE "G%" 
+OR Customername LIKE "R%";
+
+8) Select all records where the City column has the value 'Berlin' and the PostalCode column has the value '12209'.
+
+Ans: Select * from Customers where City= "Berlin" and PostalCode = 12209;
+
+9) Select all records where the City column has the value 'Berlin' or 'London'
+
+Ans: Select * from Customers where City = "Berlin" or City = 'London';
+
+
+HackerRank Questions Continueddd.....
+
+1) Query the sum of the populations for all Japanese cities in CITY. The COUNTRYCODE for Japan is JPN
+
+Ans: Select SUM(Population) from CITY where COUNTRYCODE = 'JPN' ;
+
+2)Query the difference between the maximum and minimum populations in CITY.
+
+Ans: Select MAX(Population) - MIN(Population) from City;
+
+3)Write a query that prints a list of employee names (i.e.: the name attribute) for employees in Employee having a salary greater than  per month who have been employees for less than  months. Sort your result by ascending employee_id.
+
+Ans: Select name from Employee
+where salary > 2000 and months < 10 
+order by employee_id;
+
+4)Write a query that prints a list of employee names (i.e.: the name attribute) from the Employee table in alphabetical order.
+
+Ans: select name from employee order by name;
+
+5)Query the list of CITY names from STATION that either do not start with vowels or do not end with vowels. Your result cannot contain duplicates.
+
+Ans: Select DISTINCT City from Station where city not like "[aeiou]%" or city not like "%[aeiou]";
+
+
+
+
+
+
+
 
 
